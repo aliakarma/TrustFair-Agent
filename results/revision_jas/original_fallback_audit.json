@@ -1,0 +1,302 @@
+[
+ {
+  "seed": 41,
+  "attack": 0,
+  "method": "trusted",
+  "fallback_rounds": 1,
+  "attacker_weight": 0.44959548843372493,
+  "f1": 0.8208296557811114,
+  "tpr_gap": 0.060939716407210714,
+  "weights": [
+   0.248,
+   0.2109,
+   0.0915,
+   0.4496
+  ]
+ },
+ {
+  "seed": 41,
+  "attack": 0,
+  "method": "trustfair",
+  "fallback_rounds": 2,
+  "attacker_weight": 0.4360220519113796,
+  "f1": 0.828671328671328,
+  "tpr_gap": 0.07044404181717945,
+  "weights": [
+   0.2234,
+   0.2314,
+   0.1092,
+   0.436
+  ]
+ },
+ {
+  "seed": 41,
+  "attack": 1,
+  "method": "trusted",
+  "fallback_rounds": 1,
+  "attacker_weight": 0.015625,
+  "f1": 0.8156028368794319,
+  "tpr_gap": 0.06523094815372993,
+  "weights": [
+   0.429,
+   0.4341,
+   0.1212,
+   0.0156
+  ]
+ },
+ {
+  "seed": 41,
+  "attack": 1,
+  "method": "trustfair",
+  "fallback_rounds": 1,
+  "attacker_weight": 0.015625,
+  "f1": 0.8163265306122442,
+  "tpr_gap": 0.06674334984761984,
+  "weights": [
+   0.4616,
+   0.3991,
+   0.1237,
+   0.0156
+  ]
+ },
+ {
+  "seed": 107,
+  "attack": 0,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.059986771715544264,
+  "f1": 0.7882676443629691,
+  "tpr_gap": 0.03933375002820996,
+  "weights": [
+   0.2113,
+   0.6158,
+   0.1128,
+   0.06
+  ]
+ },
+ {
+  "seed": 107,
+  "attack": 0,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.06550907930061016,
+  "f1": 0.7872146118721455,
+  "tpr_gap": 0.04639257355762172,
+  "weights": [
+   0.2436,
+   0.585,
+   0.1058,
+   0.0655
+  ]
+ },
+ {
+  "seed": 107,
+  "attack": 1,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.014751171425467611,
+  "f1": 0.7851851851851845,
+  "tpr_gap": 0.03921699648260957,
+  "weights": [
+   0.1995,
+   0.6369,
+   0.1489,
+   0.0148
+  ]
+ },
+ {
+  "seed": 107,
+  "attack": 1,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.016623538694406956,
+  "f1": 0.7855822550831786,
+  "tpr_gap": 0.05171699648260955,
+  "weights": [
+   0.2378,
+   0.6141,
+   0.1315,
+   0.0166
+  ]
+ },
+ {
+  "seed": 233,
+  "attack": 0,
+  "method": "trusted",
+  "fallback_rounds": 1,
+  "attacker_weight": 0.14778259109910882,
+  "f1": 0.7779850746268651,
+  "tpr_gap": 0.040655359687201326,
+  "weights": [
+   0.3649,
+   0.0975,
+   0.3899,
+   0.1478
+  ]
+ },
+ {
+  "seed": 233,
+  "attack": 0,
+  "method": "trustfair",
+  "fallback_rounds": 1,
+  "attacker_weight": 0.15619301573177108,
+  "f1": 0.7788104089219324,
+  "tpr_gap": 0.043406727972132436,
+  "weights": [
+   0.3817,
+   0.1036,
+   0.3585,
+   0.1562
+  ]
+ },
+ {
+  "seed": 233,
+  "attack": 1,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.0822921481824596,
+  "f1": 0.7775700934579433,
+  "tpr_gap": 0.05106064295177895,
+  "weights": [
+   0.4544,
+   0.107,
+   0.3564,
+   0.0823
+  ]
+ },
+ {
+  "seed": 233,
+  "attack": 1,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.11702315084256523,
+  "f1": 0.7545023696682458,
+  "tpr_gap": 0.052239458846601694,
+  "weights": [
+   0.4796,
+   0.1134,
+   0.29,
+   0.117
+  ]
+ },
+ {
+  "seed": 509,
+  "attack": 0,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.3338986538815397,
+  "f1": 0.8193832599118936,
+  "tpr_gap": 0.06783388901756612,
+  "weights": [
+   0.2111,
+   0.2666,
+   0.1884,
+   0.3339
+  ]
+ },
+ {
+  "seed": 509,
+  "attack": 0,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.3287120508605091,
+  "f1": 0.8190644307149155,
+  "tpr_gap": 0.08104485438539313,
+  "weights": [
+   0.1852,
+   0.2815,
+   0.2046,
+   0.3287
+  ]
+ },
+ {
+  "seed": 509,
+  "attack": 1,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.0,
+  "f1": 0.8184233835252429,
+  "tpr_gap": 0.08909573358154535,
+  "weights": [
+   0.2625,
+   0.4656,
+   0.2718,
+   0.0
+  ]
+ },
+ {
+  "seed": 509,
+  "attack": 1,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.0,
+  "f1": 0.8191489361702121,
+  "tpr_gap": 0.08531705611865736,
+  "weights": [
+   0.2199,
+   0.4837,
+   0.2964,
+   0.0
+  ]
+ },
+ {
+  "seed": 811,
+  "attack": 0,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.15751533991402797,
+  "f1": 0.7723132969034602,
+  "tpr_gap": 0.07736624795448324,
+  "weights": [
+   0.3928,
+   0.3648,
+   0.0849,
+   0.1575
+  ]
+ },
+ {
+  "seed": 811,
+  "attack": 0,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.16012813315697835,
+  "f1": 0.7746606334841623,
+  "tpr_gap": 0.084248988508899,
+  "weights": [
+   0.4217,
+   0.3289,
+   0.0893,
+   0.1601
+  ]
+ },
+ {
+  "seed": 811,
+  "attack": 1,
+  "method": "trusted",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.007418508941401331,
+  "f1": 0.7702205882352935,
+  "tpr_gap": 0.08139100472060831,
+  "weights": [
+   0.4637,
+   0.4189,
+   0.1099,
+   0.0074
+  ]
+ },
+ {
+  "seed": 811,
+  "attack": 1,
+  "method": "trustfair",
+  "fallback_rounds": 0,
+  "attacker_weight": 0.006632380119296299,
+  "f1": 0.7683923705722064,
+  "tpr_gap": 0.08635514756838286,
+  "weights": [
+   0.4963,
+   0.3812,
+   0.1159,
+   0.0066
+  ]
+ }
+]

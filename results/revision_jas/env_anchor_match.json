@@ -1,0 +1,65 @@
+{
+ "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+ "numpy": "2.2.6",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+ "seeds": [
+  1001,
+  1002,
+  1003,
+  1004,
+  1005,
+  1006,
+  1007,
+  1008,
+  1009,
+  1010,
+  1011,
+  1012,
+  1013,
+  1014,
+  1015,
+  1016,
+  1017,
+  1018,
+  1019,
+  1020
+ ],
+ "cpq": {
+  "c": 2.0,
+  "a0": 0.2,
+  "eta1": 10.0,
+  "eta2": 5.0,
+  "tau": 0.5,
+  "nu": 0.01,
+  "delta": 0.01,
+  "z": 1.96
+ },
+ "fedval": {
+  "s1": 3.0,
+  "C": 3.0,
+  "s1_avg": 5.0,
+  "s2": 3.0,
+  "s2_group": 30.0
+ },
+ "push": 3.0,
+ "min_cell": 20,
+ "acs_clients": [
+  "wv",
+  "me",
+  "nm",
+  "ut",
+  "nd",
+  "ms"
+ ],
+ "acs_anchor": "vt",
+ "parts": [
+  "anchor",
+  "match"
+ ],
+ "part_seconds": {
+  "anchor": 492,
+  "match": 68
+ },
+ "seconds": 560
+}
