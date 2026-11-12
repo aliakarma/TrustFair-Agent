@@ -273,8 +273,9 @@ def fixes(main, anchor_runs):
             row[m]['sf_f1'] = float(sf.f1.mean()) if len(sf) else None
             cells += [f'{w:.3f}', f'{x.j.mean():.3f}']
         f1s = [row[m]['f1'] for m in row]; sfs = [row[m]['sf_f1'] for m in row if row[m]['sf_f1'] is not None]
-        lines.append(f"{lab} & " + ' & '.join(cells) + f" & {min(f1s):.3f}--{max(f1s):.3f} & "
-                     + (f"{min(sfs):.3f}--{max(sfs):.3f}" if sfs else '--') + ' \\\\')
+        # a range whose ends round to the same value is printed once
+        span = lambda v: f"{min(v):.3f}" if f"{min(v):.3f}" == f"{max(v):.3f}" else f"{min(v):.3f}--{max(v):.3f}"
+        lines.append(f"{lab} & " + ' & '.join(cells) + f" & {span(f1s)} & " + (span(sfs) if sfs else '--') + ' \\\\')
         out[lab] = row
     lines.append('\\midrule')
     lines.append(f"FedAvg (reference) & 0.167 & {fa.j.mean():.3f} & 0.167 & {fa.j.mean():.3f} & 0.167 & {fa.j.mean():.3f} & "
