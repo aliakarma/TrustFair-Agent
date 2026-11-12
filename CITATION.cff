@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Anchor trust under label shift: code, data and results"
+type: software
+authors:
+  - family-names: "Syed"
+    given-names: "Toqeer Ali"
+  - family-names: "Siddiqui"
+    given-names: "Muhammad Shoaib"
+  - family-names: "Akarma"
+    given-names: "Ali"
+license: MIT
+date-released: "2026-11-11"
+keywords:
+  - federated learning
+  - robust aggregation
+  - label shift
+  - algorithmic fairness
+  - disability
+  - employment

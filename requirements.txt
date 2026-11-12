@@ -1,0 +1,6 @@
+# Exact versions used for the runs (results/revision/env.json records the full environment).
+# Python 3.10.11
+numpy==2.2.6
+pandas==2.3.3
+# Optional: only the plots in code/experiment.py need matplotlib, built against the installed NumPy.
+# matplotlib

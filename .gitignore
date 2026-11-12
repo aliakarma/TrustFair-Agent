@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# LaTeX build files, in case the manuscript is compiled next to the code
+*.aux
+*.log
+*.out
+*.blg
+*.synctex.gz
+
+Paper/
+paper/
