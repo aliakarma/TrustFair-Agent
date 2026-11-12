@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper."
-title: "Anchor trust under label shift: code, data and results"
+title: "Label shift and anchor-based trust in federated logistic regression: code, data and results"
 type: software
 authors:
   - family-names: "Syed"
@@ -10,6 +10,7 @@ authors:
   - family-names: "Akarma"
     given-names: "Ali"
 license: MIT
+repository-code: "https://github.com/aliakarma/TrustFair-Agent"
 date-released: "2026-11-11"
 keywords:
   - federated learning

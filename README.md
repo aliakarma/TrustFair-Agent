@@ -1,6 +1,6 @@
-# Anchor trust under label shift
+# Label shift and anchor-based trust in federated logistic regression
 
-Code, data and results for the paper *Anchor trust under label shift: whom robust federated aggregation excludes, with evidence from census employment data* (Toqeer Ali Syed, Muhammad Shoaib Siddiqui and Ali Akarma), submitted to the Journal of Applied Statistics. The title is a working title.
+Code, data and results for the paper *Label shift and anchor-based trust in federated logistic regression: exclusion, estimand bias and a centered correction* (Toqeer Ali Syed, Muhammad Shoaib Siddiqui and Ali Akarma), submitted to the Journal of Applied Statistics.
 
 Robust aggregation rules that trust a small anchor dataset weight each institution by the cosine between its update and the anchor's. The paper shows that for federated logistic regression under label shift this cosine depends on an institution only through the gap between its outcome base rate and the anchor's. It measures the consequence on American Community Survey microdata (six development states, 89 small areas and six held-out states), shows that the exclusion biases the pooled model's calibration, and tests a centered cosine that removes the base-rate direction. It also evaluates coverage-preserving quarantine with a balanced paired test (CPQ-B) and a group-wise release gate.
 
@@ -16,7 +16,10 @@ code/
   revision_analysis.py     Main summaries, paired bootstrap intervals, LaTeX tables (input folder from TF_RES)
   jas_analysis.py          Analyses added for the JAS version: permutation tests, clustered PUMA regression,
                            calibration, null federation, release gate, held-out hypotheses, jas_numbers.json
-  jas_mechanism.py         Numerical check of Proposition 1 (mechanism_check.json, mechanism_scatter.dat)
+  jas_mechanism.py         Numerical check of Proposition 1 (mechanism_check.json, mechanism_scatter.dat,
+                           mechanism_points.dat for Figure 2)
+  jas_figures.py           Data of Figure 3: weights with the standard and the centered cosine
+                           (weights_center_acs.dat, puma_center.dat)
   check_reproduce.py       Confirms that the current code reproduces the earlier runs exactly
   flatten_submission.py    Builds a flattened LaTeX upload package (written for the earlier Springer version)
 data/acs/
@@ -30,7 +33,9 @@ results/
   revision_jas/            Every run, table and number of the JAS version, the held-out pre-specification
                            (heldout_prereg.md) and the per-part timing records (env_*.json)
 Paper/
-  main_jas.tex, supplementary_jas.tex, references.bib, figures/
+  main_jas.tex, supplementary_jas.tex, references.bib, figures/ (TikZ and pgfplots sources)
+  build.sh                 Builds both PDFs from this folder (sh Paper/build.sh)
+  check_numbers.py         Looks up every decimal number of the main text in the generated result files
 ```
 
 ## Setup
@@ -62,7 +67,10 @@ TF_OUT=results/revision_jas python code/revision_experiments.py --part partial_p
 TF_OUT=results/revision_jas python code/jas_mechanism.py
 TF_RES=results/revision_jas python code/revision_analysis.py
 TF_RES=results/revision_jas python code/jas_analysis.py
+TF_RES=results/revision_jas python code/jas_figures.py
 python code/check_reproduce.py
+sh Paper/build.sh                                            # supplement and main paper (pdflatex, bibtex)
+python Paper/check_numbers.py
 ```
 
 The parts can run in parallel processes. Together they took about 5.2 CPU-hours on an AMD Ryzen 5 5600H. Each part writes its time to `results/revision_jas/env_<parts>.json`. Seeds 1001 to 1020 are fixed in the code. The derived arrays are already in `data/acs/`, so `prepare_acs.py` is only needed to rebuild them from the raw census files.
@@ -85,7 +93,7 @@ The task follows the ACSEmployment definition of Ding et al. (2021), restricted 
 
 ## Citation
 
-See `CITATION.cff`. The archive DOI will be added here once a release has been deposited.
+See `CITATION.cff`. Repository: <https://github.com/aliakarma/TrustFair-Agent>. The archive DOI will be added here once a release has been deposited.
 
 ## License
 
