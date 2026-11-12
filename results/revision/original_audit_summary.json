@@ -1,0 +1,16 @@
+{
+ "fallback_rounds_attack": 2,
+ "fallback_rounds_clean": 5,
+ "mean_attacker_weight": {
+  "trusted": 0.02401736570986571,
+  "trustfair": 0.031180813931253694
+ },
+ "clean_weights_trusted": [
+  0.286,
+  0.311,
+  0.174,
+  0.23
+ ],
+ "share_support_lower_recall_synthetic": 0.3227642276422764,
+ "share_support_lower_recall_acs": 0.9973770491803279
+}

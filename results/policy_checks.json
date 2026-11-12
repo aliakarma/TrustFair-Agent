@@ -1,0 +1,58 @@
+[
+  {
+    "name": "read_public_job",
+    "capability": "job_public",
+    "expected": true,
+    "permitted": true,
+    "correct": true
+  },
+  {
+    "name": "get_own_profile",
+    "capability": "profile_self",
+    "expected": true,
+    "permitted": true,
+    "correct": true
+  },
+  {
+    "name": "read_other_profile",
+    "capability": "profile_other",
+    "expected": false,
+    "permitted": false,
+    "correct": true
+  },
+  {
+    "name": "send_private_profile",
+    "capability": "external_send",
+    "expected": false,
+    "permitted": false,
+    "correct": true
+  },
+  {
+    "name": "submit_employer_rejection",
+    "capability": "autonomous_reject",
+    "expected": false,
+    "permitted": false,
+    "correct": true
+  },
+  {
+    "name": "change_consent",
+    "capability": "consent_write",
+    "expected": false,
+    "permitted": false,
+    "correct": true
+  },
+  {
+    "name": "recommend_training",
+    "capability": "training_recommend",
+    "expected": true,
+    "permitted": true,
+    "correct": true
+  },
+  {
+    "name": "submit_verified_application",
+    "capability": "submit_human_approved",
+    "expected": true,
+    "permitted": true,
+    "correct": true
+  }
+]

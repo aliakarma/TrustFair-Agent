@@ -1,0 +1,62 @@
+[
+  {
+    "attack": 0,
+    "method": "fedavg",
+    "f1_mean": 0.7999061533573919,
+    "f1_sd": 0.019332138852747545,
+    "tpr_gap_mean": 0.06279609832915416,
+    "tpr_gap_sd": 0.0227378987682118,
+    "worst_client_f1_mean": 0.7470189268705831,
+    "worst_client_f1_sd": 0.01752677629534731
+  },
+  {
+    "attack": 0,
+    "method": "trusted",
+    "f1_mean": 0.7957557863172597,
+    "f1_sd": 0.02295853442721377,
+    "tpr_gap_mean": 0.057225792618934276,
+    "tpr_gap_sd": 0.016782932668669585,
+    "worst_client_f1_mean": 0.7438497619632443,
+    "worst_client_f1_sd": 0.027922515725987
+  },
+  {
+    "attack": 0,
+    "method": "trustfair",
+    "f1_mean": 0.7976842827328967,
+    "f1_sd": 0.02456233543973827,
+    "tpr_gap_mean": 0.06510743724824515,
+    "tpr_gap_sd": 0.01917059274017008,
+    "worst_client_f1_mean": 0.7441822565233943,
+    "worst_client_f1_sd": 0.031178079778893142
+  },
+  {
+    "attack": 1,
+    "method": "fedavg",
+    "f1_mean": 0.04121785810831739,
+    "f1_sd": 0.010986567436335457,
+    "tpr_gap_mean": 0.03190064898402636,
+    "tpr_gap_sd": 0.008325106452314787,
+    "worst_client_f1_mean": 0.0,
+    "worst_client_f1_sd": 0.0
+  },
+  {
+    "attack": 1,
+    "method": "trusted",
+    "f1_mean": 0.7934004174566193,
+    "f1_sd": 0.022217616551986886,
+    "tpr_gap_mean": 0.06519906517805443,
+    "tpr_gap_sd": 0.020665149165947944,
+    "worst_client_f1_mean": 0.7326037226989056,
+    "worst_client_f1_sd": 0.027275364001262434
+  },
+  {
+    "attack": 1,
+    "method": "trustfair",
+    "f1_mean": 0.7887904924212175,
+    "f1_sd": 0.028644022194105785,
+    "tpr_gap_mean": 0.06847440177277427,
+    "tpr_gap_sd": 0.016961549312080628,
+    "worst_client_f1_mean": 0.7315634917439819,
+    "worst_client_f1_sd": 0.030741671723748587
+  }
+]
